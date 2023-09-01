@@ -25,12 +25,12 @@ print(lista)
 print(f'Foram cadastradas {len(lista)}')
 print(f'A pessoa mais pesada tem {mai} kg e a mais leve tem {men} kg')
 
-# pesado = []
-# leve = []
-# for nome, peso in (lista):
-#     if peso > 50:
-#         pesado.append(nome)
-#     else:
-#         leve.append(nome)
-# print('-='*60)     
-# print(f'{pesado} são as mais pesadas e {leve} são as mais leves' )
+pesado = []
+leve = []
+for nome, peso in lista:
+    if peso == mai:
+        pesado.append(nome)
+    if peso == men:
+        leve.append(nome)
+print('-='*60)     
+print(f'{pesado} é a pessoa mais pesada e {leve} é a mais leve' )
